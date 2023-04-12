@@ -260,8 +260,8 @@ function M.setup()
   -- Add useful keymaps
   if #lvim.builtin.nvimtree.setup.view.mappings.list == 0 then
     lvim.builtin.nvimtree.setup.view.mappings.list = {
-      { key = { "l", "<CR>", "o" }, action = "edit", mode = "n" },
-      { key = "h", action = "close_node" },
+      { key = { "l", "<CR>", "o", "<Right>" }, action = "edit", mode = "n" },
+      { key = { "h", "<Left>" }, action = "close_node" },
       { key = "v", action = "vsplit" },
       { key = "C", action = "cd" },
       { key = "gtf", action = "telescope_find_files", action_cb = telescope_find_files },
